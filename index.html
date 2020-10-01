@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JAVASCRIPT</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+	<div id="calculator">
+		<input type="text" id="data">
+		<button onclick="one()">1</button>
+		<button onclick="two()">2</button>
+		<button onclick="three()">3</button>
+		
+		<button onclick="five()">5</button>
+		<button onclick="six()">6</button>
+		<button onclick="seven()">7</button>
+		<button onclick="eight()">8</button>
+		<button onclick="nine()">9</button>
+		<button onclick="zero()">0</button>
+		<button onclick="add()">+</button>
+		<button onclick="sub()">-</button>
+		<button onclick="mul()">*</button>
+		<button onclick="div()">/</button>
+		<button onclick="equal()">=</button>
+	</div>
+
+	<div class="grade-result">
+		<input id="result"type="text" name="">
+		<button onclick="showGrade()">Show Grade</button>
+		<h2 id="grade"></h2>
+	</div>
+
+	<script>
+		
+
+		function one(){
+			document.getElementById('data').value =1;
+		}
+		function two(){
+			document.getElementById('data').value +=2;
+		}
+		function three(){
+			document.getElementById('data').value +=3;
+		}
+		function four(){
+			document.getElementById('data').value +=4;
+		}
+		function five(){
+			document.getElementById('data').value +=5;
+		}
+		function six(){
+			document.getElementById('data').value +=6;
+		}
+		function seven(){
+			document.getElementById('data').value +=7;
+		}
+		function eight(){
+			document.getElementById('data').value +=8;
+		}
+		function nine(){
+			document.getElementById('data').value +=9;
+		}
+		function zero(){
+			document.getElementById('data').value +=0;
+		}
+		function add(){
+			document.getElementById('data').value +="+";
+		}
+		function sub(){
+			document.getElementById('data').value +="-";
+		}
+		function mul(){
+			document.getElementById('data').value +="*";
+		}
+		function dev(){
+			document.getElementById('data').value +="/";
+		}
+		function equal(){
+			document.getElementById('data').value = eval(document.getElementById('data').value);
+		}
+
+	</script>
+</body>
+</html>
