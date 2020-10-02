@@ -3,77 +3,35 @@
 <head>
 	<title>JAVASCRIPT</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-	<div id="calculator">
-		<input type="text" id="data">
-		<button onclick="one()">1</button>
-		<button onclick="two()">2</button>
-		<button onclick="three()">3</button>
-		
-		<button onclick="five()">5</button>
-		<button onclick="six()">6</button>
-		<button onclick="seven()">7</button>
-		<button onclick="eight()">8</button>
-		<button onclick="nine()">9</button>
-		<button onclick="zero()">0</button>
-		<button onclick="add()">+</button>
-		<button onclick="sub()">-</button>
-		<button onclick="mul()">*</button>
-		<button onclick="div()">/</button>
-		<button onclick="equal()">=</button>
+	<div class="calculator">
+		<h2>General Calculator</h2>
+		<input type="text" id="data" disabled="false">
+
+		<button id="on" onclick="on()">ON</button>
+		<button id="off" onclick="off()">OFF</button>
+		<button class="button" onclick="allclear()">C</button>
+		<button class="button" onclick="backSpace()">DEL</button>
+		<button class="button" onclick="one()">1</button>
+		<button class="button" onclick="two()">2</button>
+		<button class="button" onclick="three()">3</button>
+		<button class="button" onclick="five()">5</button>
+		<button class="button" onclick="six()">6</button>
+		<button class="button" onclick="seven()">7</button>
+		<button class="button" onclick="eight()">8</button>
+		<button class="button" onclick="nine()">9</button>
+		<button class="button" onclick="zero()">0</button>
+		<button class="button" onclick="add()">+</button>
+		<button class="button" onclick="sub()">-</button>
+		<button class="button" onclick="mul()">*</button>
+		<button class="button" onclick="div()">/</button>
+		<button class="button" onclick="equal()">=</button>
+		<button class="button" onclick="dot()">.</button>
 	</div>
 
-	<script>
-		
-
-		function one(){
-			document.getElementById('data').value =1;
-		}
-		function two(){
-			document.getElementById('data').value +=2;
-		}
-		function three(){
-			document.getElementById('data').value +=3;
-		}
-		function four(){
-			document.getElementById('data').value +=4;
-		}
-		function five(){
-			document.getElementById('data').value +=5;
-		}
-		function six(){
-			document.getElementById('data').value +=6;
-		}
-		function seven(){
-			document.getElementById('data').value +=7;
-		}
-		function eight(){
-			document.getElementById('data').value +=8;
-		}
-		function nine(){
-			document.getElementById('data').value +=9;
-		}
-		function zero(){
-			document.getElementById('data').value +=0;
-		}
-		function add(){
-			document.getElementById('data').value +="+";
-		}
-		function sub(){
-			document.getElementById('data').value +="-";
-		}
-		function mul(){
-			document.getElementById('data').value +="*";
-		}
-		function dev(){
-			document.getElementById('data').value +="/";
-		}
-		function equal(){
-			document.getElementById('data').value = eval(document.getElementById('data').value);
-		}
-
-	</script>
+	<script src="js/general-calculator.js"></script>
 </body>
 </html>
