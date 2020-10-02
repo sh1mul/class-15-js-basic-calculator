@@ -8,6 +8,9 @@ body{
 h2{
 	margin-bottom: 50px;
 	font-size: 20px;
+	border: 1px solid #6f6f6f;
+	padding: 7px 20px;
+	color: #000000ad;
 }
 .calculator{
 
@@ -52,17 +55,16 @@ input {
     font-weight: 800;
     background: white;
     color: black;
-    border: 1px solid black;
+    border: 1px solid #6f6f6f36;
     border-radius: 20px;
-    border-top: 5px solid;
+    /* border-top: 5px solid; */
+    box-shadow: 0px 5px 6px #6f6f6f, -20px -20px 60px #ffffff;
 }
 button{
 
 width: 23.33%;
 
 padding: 10px;
-
-border-top: 5px solid #060606;
 
 outline: none;
 
@@ -72,15 +74,15 @@ font-weight: 700;
 
 cursor: pointer;
 
-border-left: 4px solid black;
-
-border-bottom: 1px solid #949494;
-
-border-right: 1px solid #949494;
-
 background: white;
 
 border-radius: 20px;
+
+box-shadow: -3px 3px 4px #8A8A88;
+
+border: navajowhite;
+
+border: 1px solid #8a8a8a;
 }
 #on{
 

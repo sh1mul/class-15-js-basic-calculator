@@ -1,7 +1,14 @@
+		
+		var display = document.getElementById('data');
+		var start = document.getElementById('on');
+		var stop =document.getElementById('off'); 
+
+
+
 		function init(){
-			var checkstatus = document.getElementById('data').getAttribute("class");
-			document.getElementById('off').setAttribute("disabled", "disabled");
-			document.getElementById('data').setAttribute('placeholder','"ON" TO START');
+			var checkstatus = display.getAttribute("class");
+			stop.setAttribute("disabled", "disabled");
+			display.setAttribute('placeholder','"ON" TO START');
 
 			if (checkstatus !== "on") {
 				var els = document.querySelectorAll('.button');
@@ -14,9 +21,9 @@
 
 		//Enable all input
 		function on(){
-			document.getElementById('data').setAttribute("placeholder","0");
-			document.getElementById('on').setAttribute("disabled", "disabled");
-			document.getElementById('off').removeAttribute("disabled");
+			display.setAttribute("placeholder","0");
+			start.setAttribute("disabled", "disabled");
+			stop.removeAttribute("disabled");
 			var els = document.querySelectorAll('.button');
 				for (var i=0; i < els.length; i++) {
 				    els[i].removeAttribute("disabled");
@@ -25,9 +32,10 @@
 
 		//disable all input
 		function off(){
-			document.getElementById('data').setAttribute("placeholder","Switched OFF");
-			document.getElementById('off').setAttribute("disabled", "disabled");
-			document.getElementById('on').removeAttribute("disabled");
+			display.value="";
+			display.setAttribute("placeholder","Switched OFF");
+			stop.setAttribute("disabled", "disabled");
+			start.removeAttribute("disabled");
 			var els = document.querySelectorAll('.button');
 				for (var i=0; i < els.length; i++) {
 				    els[i].setAttribute("disabled", "disabled");
@@ -36,61 +44,61 @@
 
 		//Clear all the data
 		function allclear(){
-			document.getElementById('data').value = "";
-			document.getElementById('data').setAttribute("placeholder","0");
+			display.value = "";
+			display.setAttribute("placeholder","0");
 		}
 
 		//clear last input
 		function backSpace(){
-			var theInput = document.getElementById('data');
+			var theInput = display;
 			theInput.value = theInput.value.slice(0, theInput.value.length -1);
 		}
 
 		function dot(){
-			document.getElementById('data').value +=".";
+			display.value +=".";
 		}
 		function one(){
-			document.getElementById('data').value +=1;
+			display.value +=1;
 		}
 		function two(){
-			document.getElementById('data').value +=2;
+			display.value +=2;
 		}
 		function three(){
-			document.getElementById('data').value +=3;
+			display.value +=3;
 		}
 		function four(){
-			document.getElementById('data').value +=4;
+			display.value +=4;
 		}
 		function five(){
-			document.getElementById('data').value +=5;
+			display.value +=5;
 		}
 		function six(){
-			document.getElementById('data').value +=6;
+			display.value +=6;
 		}
 		function seven(){
-			document.getElementById('data').value +=7;
+			display.value +=7;
 		}
 		function eight(){
-			document.getElementById('data').value +=8;
+			display.value +=8;
 		}
 		function nine(){
-			document.getElementById('data').value +=9;
+			display.value +=9;
 		}
 		function zero(){
-			document.getElementById('data').value +=0;
+			display.value +=0;
 		}
 		function add(){
-			document.getElementById('data').value +="+";
+			display.value +="+";
 		}
 		function sub(){
-			document.getElementById('data').value +="-";
+			display.value +="-";
 		}
 		function mul(){
-			document.getElementById('data').value +="*";
+			display.value +="*";
 		}
 		function dev(){
-			document.getElementById('data').value +="/";
+			display.value +="/";
 		}
 		function equal(){
-			document.getElementById('data').value = eval(document.getElementById('data').value);
+			display.value = eval(display.value);
 		}
