@@ -12,6 +12,9 @@ h2{
 	padding: 7px 20px;
 	color: #000000ad;
 }
+.func{
+	background:red !important;
+}
 .calculator{
 
 width: 400px;
